@@ -1,3 +1,6 @@
-from scrapy import cmdline
+import os
+import time
 
-cmdline.execute('scrapy crawl news'.split())
+while True:
+    os.system("scrapy crawl news")
+    time.sleep(86400)
